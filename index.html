@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Threads — eleven years of receipts</title>
+<meta name="description" content="An interactive reading of one person's digital life, rebuilt from listening history and a household ledger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+
+<div id="app">
+  <header class="masthead">
+    <h1 class="wordmark">Threads</h1>
+    <span class="span" id="spanlabel"></span>
+    <nav class="viewswitch" aria-label="Views">
+      <button data-view="field"    aria-current="true">Field</button>
+      <button data-view="chapters">Chapters</button>
+      <button data-view="moments">Moments</button>
+      <button data-view="patterns">Patterns</button>
+      <button class="playstory" id="play">Play the story</button>
+    </nav>
+  </header>
+
+  <div class="controls">
+    <input class="search" id="search" type="search"
+           placeholder="Search artists, places, things bought…"
+           aria-label="Search receipts">
+    <div class="kinds" id="kinds"></div>
+    <label class="linktoggle">
+      <input type="checkbox" id="links" checked>
+      Show background threads
+    </label>
+  </div>
+
+  <div class="stage">
+    <div class="main">
+      <div class="field" id="fieldwrap">
+        <canvas id="field"></canvas>
+        <div class="tooltip" id="tooltip" style="display:none"></div>
+        <button class="zoomreset" id="reset">Reset view</button>
+        <p class="fieldhint" id="fieldhint">
+          Drag to move through time, scroll to zoom, click any dot to pull its
+          threads.
+        </p>
+        <div class="storybar" id="storybar" hidden></div>
+      </div>
+      <div class="reader" id="reader" hidden></div>
+    </div>
+    <aside class="rail" id="rail"></aside>
+  </div>
+</div>
+
+<script>window.__THREADS_DATA__ = /*__DATA__*/;</script>
+<script>/*__JS__*/</script>
+</body>
+</html>
