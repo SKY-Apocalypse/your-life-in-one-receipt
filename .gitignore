@@ -1,0 +1,10 @@
+# Raw datasets — large and license-restricted, download separately (see README)
+data/raw/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
